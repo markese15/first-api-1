@@ -11,10 +11,9 @@ public class NameController {
     public String getName(){
         return "mirko"; }
     @PostMapping (value= "/name")
-    public StringBuilder postName(StringBuilder name){
-        name= new StringBuilder(new StringBuilder("mirko").reverse().toString());
-
-        return name ;
+    public StringBuilder postName(){
+       StringBuilder name= new StringBuilder(new StringBuilder("mirko").reverse().toString());
+       return name ;
     }
 
 }
