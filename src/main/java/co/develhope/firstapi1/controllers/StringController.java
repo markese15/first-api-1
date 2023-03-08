@@ -16,7 +16,5 @@ public class StringController {
             return name1 +" "+ name2;
         }
 
-
-
     }
 }
