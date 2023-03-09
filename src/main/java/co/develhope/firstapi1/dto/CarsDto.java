@@ -1,6 +1,8 @@
 package co.develhope.firstapi1.dto;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 public class CarsDto {
 @NotBlank(message = "mandatory")
@@ -22,5 +24,29 @@ public class CarsDto {
                 ", id='" + id + '\'' +
                 ", price=" + price +
                 '}';
+    }
+
+    public String getModelName() {
+        return modelName;
+    }
+
+    public void setModelName(String modelName) {
+        this.modelName = modelName;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
